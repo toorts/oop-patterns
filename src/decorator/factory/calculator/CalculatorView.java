@@ -27,12 +27,12 @@ public class CalculatorView {
                 }
                 if (cmd.equals("=")) {
                     int result = calculator.getResult();
-                    System.out.printf("Результат %d\n", result);
+                    System.out.printf("Результат: %d\n", result);
                     break;
                 }
             }
-            String cmd = prompt("Еще посчитать (Y/N)?");
-            if (cmd.equals("Y")) {
+            String cmd = prompt("Еще посчитать (y/n)? ");
+            if (cmd.equals("y")) {
                 continue;
             }
             break;
