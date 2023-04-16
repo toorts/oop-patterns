@@ -12,7 +12,7 @@ public class Main {
         jobAgency.registerObserver(petrov);
         jobAgency.registerObserver(ivanov);
 
-        for(int i = 0; i< 10; i++){
+        for (int i = 0; i < 10; i++) {
             System.out.println();
             System.out.printf("------------%d---------------%n", i + 1);
             google.needEmpoyee();
