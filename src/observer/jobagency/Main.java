@@ -15,8 +15,8 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             System.out.println();
             System.out.printf("------------%d---------------%n", i + 1);
-            google.needEmpoyee();
-            geekBrains.needEmpoyee();
+            google.needEmployee();
+            geekBrains.needEmployee();
         }
     }
 }

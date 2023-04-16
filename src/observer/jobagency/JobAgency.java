@@ -22,7 +22,7 @@ public class JobAgency implements Publisher {
     // Разослать предложения
     @Override
     public void sendOffer(String nameCompany, int salary) {
-        for (Observer observer : observers){
+        for (Observer observer : observers) {
             observer.receiveOffer(nameCompany, salary);
         }
     }

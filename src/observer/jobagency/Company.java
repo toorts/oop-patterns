@@ -10,15 +10,16 @@ public class Company {
     int maxSalary;
 
     // компани€ работает с определенным агенством
-    public Company(Publisher jobAgency, String nameCompany, int maxSalary){
+    public Company(Publisher jobAgency, String nameCompany, int maxSalary) {
         this.jobAgency = jobAgency;
         this.nameCompany = nameCompany;
         rnd = new Random();
         this.maxSalary = maxSalary;
     }
 
-    public void needEmpoyee(){
+    public void needEmployee() {
         int salary = rnd.nextInt(maxSalary);
         jobAgency.sendOffer(nameCompany, salary);
     }
 }
+
